@@ -8,7 +8,7 @@ export function FoodItem(props) {
     set_selected_item(item)
   }
   return (
-    <Link to="items" onClick={(item) => selectItem(props.item)} className=" flex bg-white rounded-2xl w-[11pc] p-3 ">
+    <Link to={"items/"+props.item.id} onClick={(item) => selectItem(props.item)} className=" flex bg-white rounded-2xl w-[11pc] p-3 ">
       <div className=" mx-auto">
         <img
           className="  w-32 h-32 rounded-full"

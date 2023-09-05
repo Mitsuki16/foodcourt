@@ -6,12 +6,13 @@ export default function DisplayItems() {
   const data = useItemsStore((state) => state.items);
   return (
     <div>
-      <div className=" w-full md:h-screen bg-purple-200  flex justify-center items-center ">
-        <div className=" md:w-[50%]  rounded-3xl  p-3">
+      <div className=" w-full xl:h-screen
+       bg-purple-200  flex justify-center items-center ">
+        <div className=" border-white border-4 md:w-[50%]  rounded-3xl  p-3 m-4">
           <div className=" flex items-center justify-between m-6">
             <div className=" font-semibold">
-              <h1 className=" text-4xl">Fast Food,</h1>
-              <h1 className=" text-2xl">Fast Delivery</h1>
+              <h1 className=" text-2xl">Fast Food,</h1>
+              <h1 className=" text-4xl font-bold">Fast Delivery</h1>
             </div>
             <div>
               <img className=" w-8 h-8 rounded-full" src="netflix_logo.jpg" />
@@ -45,7 +46,7 @@ export default function DisplayItems() {
               </svg>
             </div>
           </div>
-          <div className=" flex justify-center  ">
+          <div className=" flex m-5 justify-center xl:justify-start  ">
             <div className=" [&_div]:w-[7pc] flex gap-2 ">
               <div className="flex gap-1 bg-yellow-200 p-4 rounded-3xl">
                 <img
